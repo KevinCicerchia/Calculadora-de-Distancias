@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug: Guardar Números en Tabla</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="APIDebug.Js" defer></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Debug: Guardar Distancias</h1>
+
+    <!-- Campo para ingresar números manualmente -->
+    <div class="debug-controls">
+        <label for="valorDebug">Valor a Guardar:</label>
+        <input type="number" id="valorDebug" placeholder="Introduce un número" />
+        <label for="guardarEn">Guardar en:</label>
+        <select id="guardarEn">
+            <option value="Distancia1">Base a Origen</option>
+            <option value="Distancia2">Origen a Destino</option>
+            <option value="Distancia3">Destino a Base</option>
+        </select>
+        <button id="guardarDebug">Guardar Valor</button>
+    </div>
+
+    <!-- Tabla para mostrar distancias -->
+    <table>
+        <thead>
+            <tr>
+                <th>Base a Origen</th>
+                <th>Origen a Destino</th>
+                <th>Destino a Base</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="Distancia1">-</td>
+                <td id="Distancia2">-</td>
+                <td id="Distancia3">-</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
