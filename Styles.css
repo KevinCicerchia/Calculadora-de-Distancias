@@ -13,24 +13,19 @@ h1 {
 
 .controls-row {
     display: flex;
-    align-items: center;  /* Alinea los controles verticalmente */
-    justify-content: center;  /* Alinea los controles horizontalmente */
-    gap: 15px;  /* Espacio entre los controles */
-    margin-bottom: 20px;  /* Separación entre los controles */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 20px;
 }
 
-label {
-    margin-right: 5px;
-    margin-left: 5px;
-    font-weight: bold;
-}
-
-input, select {
+input, button {
     padding: 10px;
     margin: 0 5px;
     width: 200px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    line-height: 1.5; /* Alinea el texto verticalmente dentro del campo */
 }
 
 button {
@@ -40,11 +35,17 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    display: inline-flex;  /* Asegura que los botones se alineen de forma horizontal */
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+label {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    line-height: 1.5; /* Centra verticalmente el texto de los labels */
 }
 
 #map {
